@@ -1,0 +1,62 @@
+---
+title       : Child height estimation
+subtitle    : Estimations of childs height based on the heights of parents
+author      : Big Data Face
+job         : Data Analyst
+framework   : html5slides   # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+
+## Shiny App. 1/5. Child Height Estimation (CHE)
+<br>
+Author: Big Data Face
+
+---
+
+## Shiny App. 2/5. CHE. URL
+
+The shiny app accessed from the following location can estimate a child heights based on the height of the parents and the gender of the child.
+
+<a>http://bigdataface.shinyapps.io/pred/</a>
+
+---
+
+## Shiny App. 3/5. CHE. Inputs
+
+The app requires the following inputs
+
+- Enter the father's height
+- Enter the mother's height
+- Tick a gender box
+
+The app will then calculate the estimated adult height of the child.
+
+---
+
+## Shiny App. 4/5. CHE. Calculations
+
+The App takes the inputs and carries out the following calculations: In this example we have a fathers heights of 200, mother's height of 150 and the Son check box ticked:
+
+```{r}
+# Add together the father's and mother's age and divide by 2:
+sum(200, 150) / 2
+
+# Then add 7.35 to account for the 'Son' check box:
+175 + 7.35
+```
+
+note. the calculation should not be taken as an actual calculation of estimated child height.
+
+---
+
+## Shiny App. 5/5. CHE.
+
+This app was produced as part of the Data Science Specialisation for Coursera as part of the Developing Data Products course project.
+
+
+
